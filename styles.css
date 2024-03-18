@@ -1,37 +1,58 @@
+/* Réinitialisation */
 * {
     box-sizing: border-box;
 }
 
+/* Style global */
 body {
-    font-family: "Nunito Sans", sans-serif; 
-    margin-bottom: 0px;
-    margin-left: 82.5px; 
-    margin-right: 82.5px; 
-    margin-top: 0px; 
-}
-
-
-main {
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-h1 {
-    display: block;
     font-family: "Nunito Sans", sans-serif;
+    margin: 0 125px;
+}
+
+/* Titres */
+h1 {
     font-size: 32px;
-    font-weight: 700; 
+    font-weight: 700;
     height: 44px;
 }
 
-.container {
+h2 {
+    font-weight: 700;
+}
+
+/* Conteneurs */
+section {
     border: 2px solid gray;
     padding: 10px;
     margin: 10px auto;
 }
 
+/* Navigation */
+.navigation {
+    list-style-type: none;
+    padding: 0;
+}
 
-/* Color panel container */
+.navigation li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px;
+    background-color: #F8F8F8;
+    border-radius: 4px;
+    border: 1.5px solid #F1F1F1;
+}
+
+.navigation li a {
+    color: black;
+    text-decoration: none;
+}
+
+.navigation li:hover {
+    background-color: #F1F1F1;
+    color: black;
+}
+
+/* Panneaux de couleurs */
 .color-container {
     display: block;
 }
@@ -40,15 +61,10 @@ h1 {
     display: inline-block;
     text-align: center;
     font-family: "Nunito Sans", sans-serif;
-    height: 100px; 
-    margin-bottom: 20px; 
-    margin-left: 0px; 
-    margin-right: 0px;
-    margin-top: 20px; 
-    min-height: 100px; 
     height: 125px;
     width: 275px;
     padding-top: 2%;
+    margin: 20px 0;
 }
 
 .cool-blue {
@@ -68,9 +84,7 @@ h1 {
     background-color: #efd9ca;
 }
 
-
-/* Font panel container */
-
+/* Panneaux de polices */
 .font-container {
     display: block;
 }
@@ -80,26 +94,27 @@ h1 {
     font-family: "Nunito Sans", sans-serif;
     font-size: 18px;
     width: 339.117px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 20px;
+    margin: 0 20px 0 0;
 }
 
 .font-label {
     text-decoration: underline;
 }
 
-.font-description-2 {
-    font-weight: bold;
+.font-regular {
+    font-weight: 400;
 }
 
-.font-description-3 {
+.font-bold {
+    font-weight: 700;
+}
+
+.font-italic {
     font-style: italic;
 }
 
 #font-source-code-pro {
-    font-family: "Source Code Pro" serif;
+    font-family: "Source Code Pro", serif;
 }
 
 #font-nunito-sans {
@@ -107,12 +122,10 @@ h1 {
 }
 
 #font-poppins {
-    font-family: "Poppins" serif;
+    font-family: "Poppins", serif;
 }
 
-
-/* Font panel container */
-
+/* Panneaux de texte */
 .text-panel h1 {
     font-weight: 700;
     font-size: 26px;
@@ -120,13 +133,13 @@ h1 {
 }
 
 .text-panel h2 {
-    font-weight: 500 bold;
+    font-weight: 500;
     font-size: 18px;
-    font-family: "Poppins" serif;
+    font-family: "Poppins", serif;
 }
 
 .text-panel p {
-    font-weight: 400 regular;
+    font-weight: 400;
     font-size: 14px;
-    font-family: "Poppins" serif;
+    font-family: "Poppins", serif;
 }
