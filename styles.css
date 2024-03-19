@@ -6,7 +6,8 @@
 /* Style global */
 body {
     font-family: "Nunito Sans", sans-serif;
-    margin: 0 125px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 /* Titres */
@@ -22,6 +23,12 @@ h2 {
 
 /* Conteneurs */
 section {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container {
     border: 2px solid gray;
     padding: 10px;
     margin: 10px auto;
@@ -53,6 +60,10 @@ section {
 }
 
 /* Panneaux de couleurs */
+#color {
+    flex: 1 200px;
+}
+
 .color-container {
     display: block;
 }
@@ -85,6 +96,12 @@ section {
 }
 
 /* Panneaux de polices */
+#font {
+    flex: 2 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .font-container {
     display: block;
 }
@@ -93,8 +110,10 @@ section {
     display: inline-block;
     font-family: "Nunito Sans", sans-serif;
     font-size: 18px;
-    width: 340px;
+    width: 30%;
     margin: 0 20px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .font-label {
@@ -126,6 +145,11 @@ section {
 }
 
 /* Panneaux de texte */
+#text-style {
+    flex: 1 200px;
+    display: block;
+}
+
 .text-panel h1 {
     font-weight: 700;
     font-size: 26px;
@@ -142,4 +166,50 @@ section {
     font-weight: 400;
     font-size: 14px;
     font-family: "Poppins", serif;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        margin: 0 20px;
+        /* Conserver une petite marge sur les côtés */
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .font-panel {
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0 10px;
+        /* Marges encore plus petites sur les écrans très étroits */
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .color-panel {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 320px) {
+    body {
+        margin: 0 5px;
+        /* Marges encore plus petites sur les écrans très étroits */
+    }
+
+    #text-style {
+        display: none;
+        /* Cacher complètement la section de style de texte sur très petit écran */
+    }
 }
