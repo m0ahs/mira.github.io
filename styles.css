@@ -170,10 +170,10 @@ section {
 
 
 
-@media (max-width: 768px) {
+/* Desktop */
+@media (min-width: 900px) and (max-width: 1199px) {
     body {
         margin: 0 20px;
-        /* Conserver une petite marge sur les côtés */
     }
 
     section {
@@ -181,35 +181,45 @@ section {
     }
 
     .font-panel {
-        width: 75%;
+        width: 30%;
     }
 }
 
-@media (max-width: 480px) {
+/* Tablettes et petits écrans de bureau */
+@media (min-width: 600px) and (max-width: 899px) {
     body {
-        margin: 0 10px;
-        /* Marges encore plus petites sur les écrans très étroits */
+        margin: 0 20px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .font-panel {
+        width: 50%;
+    }
+
+    .color-panel {
+        width: 35em;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 599px) {
+    body {
+        margin: 0 20px;
     }
 
     .container {
         padding: 5px;
     }
 
+    .font-panel {
+        width: 100%; /* Changé de 50% à 100% pour une meilleure expérience mobile */
+    }
+
     .color-panel {
         display: block;
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 320px) {
-    body {
-        margin: 0 5px;
-        /* Marges encore plus petites sur les écrans très étroits */
-    }
-
-    #text-style {
-        display: none;
-        /* Cacher complètement la section de style de texte sur très petit écran */
+        width: 100%; /* Changé de 30em à 100% pour une meilleure expérience mobile */
     }
 }
