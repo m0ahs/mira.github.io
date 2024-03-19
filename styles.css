@@ -36,6 +36,9 @@ section {
 
 /* Navigation */
 .navigation {
+    position: absolute;
+    top: 10px;
+    right: 125px;
     list-style-type: none;
     padding: 0;
 }
@@ -61,7 +64,7 @@ section {
 
 /* Panneaux de couleurs */
 #color {
-    flex: 1 200px;
+    flex: 4 200px;
 }
 
 .color-container {
@@ -200,7 +203,7 @@ section {
     }
 
     .color-panel {
-        width: 35em;
+        width: 100%;
     }
 }
 
@@ -219,7 +222,6 @@ section {
     }
 
     .color-panel {
-        display: block;
-        width: 25em; /* Changé de 30em à 100% pour une meilleure expérience mobile */
+        width: 100%; /* Changé de 30em à 100% pour une meilleure expérience mobile */
     }
 }
