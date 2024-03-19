@@ -38,7 +38,8 @@ section {
 .navigation {
     position: absolute;
     top: 10px;
-    right: 125px;
+    right: 8.5%;
+    display: block;
     list-style-type: none;
     padding: 0;
 }
@@ -186,6 +187,10 @@ section {
     .font-panel {
         width: 30%;
     }
+
+    .navigation {
+        right: 8.5%;
+    }
 }
 
 /* Tablettes et petits écrans de bureau */
@@ -205,6 +210,10 @@ section {
     .color-panel {
         width: 100%;
     }
+    
+    .navigation {
+        right: 2.5%;
+    }
 }
 
 /* Mobiles */
@@ -223,5 +232,9 @@ section {
 
     .color-panel {
         width: 100%; /* Changé de 30em à 100% pour une meilleure expérience mobile */
+    }
+
+    .navigation {
+        right: 4%;
     }
 }
