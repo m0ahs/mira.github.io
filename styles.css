@@ -220,6 +220,6 @@ section {
 
     .color-panel {
         display: block;
-        width: 100%; /* Changé de 30em à 100% pour une meilleure expérience mobile */
+        width: 25em; /* Changé de 30em à 100% pour une meilleure expérience mobile */
     }
 }
